@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link href="test.css" rel="stylesheet">
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="test.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top" >
+            <div class="container">
+                <div class="navbar-header">
+
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    <a class="navbar-brand" href="">
+                       <img src="logo.png" alt="" style="width: 70px">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                        &nbsp;
+                        <li><a href="">Главная</a></li>
+                        <li  class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Каталог <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Категория</a></li>
+                                <li><a href="">Категория</a></li>
+                                <li><a href="">Категория</a></li>
+                                <li><a href="">Категория</a></li>
+                                <li><a href="">Категория</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Распродажи</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+
+                    
+                </div>
+            </div>
+        </nav>
+	</header>
+	<main>
+		<div class="container">
+			<form name="form">
+				<h3>checkbox</h3>
+				<input type="checkbox" class="checkbox" id="checkbox">
+				<label for="checkbox"> Красный</label><br>
+				<input type="checkbox" class="checkbox" id="checkbox1">
+				<label for="checkbox1"> Синий</label><br>
+
+				<h3>radio</h3>
+				<input type="radio" name="radio" class="radio" id="radio">
+				<label for="radio"> Выбор 1</label><br>
+				<input type="radio" name="radio" class="radio" id="radio1">
+				<label for="radio1"> Выбор 2</label><br>
+				
+				<h3>text</h3>
+				Text
+				<input type="text" class="text" placeholder="Text"><br>
+				Text
+				<input type="text" class="text" placeholder="Text"><br>
+				<h3>select</h3>
+				<div class="select">
+					Сделайте выбор:
+					<select  name="select" >
+					    <option value="1111">1111</option>
+					    <option value="2222">2222</option>
+					    <option value="55555">55555</option>
+					    <option value="444444">444444</option>
+				    </select>
+			    </div>
+			    <br> <br>
+				
+				<div id="range">
+					<input class="range" type="range" min="0" max="100" step="1" value="50"> 
+				</div>
+			   
+			</form>
+		</div>
+		<div class="container">
+			<div class="todo-wrap">
+				<div class="form-group">
+					<input type="text" class="form-control input-task" placeholder="Задание">
+				</div>
+				<button type="submit" class="btn btn-default add-task">Добавить</button>
+				<div id="todos-container">
+					<!-- <div class="todo-container"> <span>dj</span><button class="edit-task">Edit</button><button class="delete-task">Del</button></div> -->
+				</div>
+			</div>
+			<div id="myModal" class="modal fade">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h4 class="modal-title">Название модали</h4>
+			      </div>
+			      <div class="modal-body">
+			        <input type="text" class="form-control input-task-edit" placeholder="Задание">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary save-changes" data-dismiss="modal">Сохранить изменения</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		</div>
+	</main>
+	<footer>
+		<div class="copyright">
+            <div class="container">
+                <p role="contentinfo">© 2017 </p>
+            </div>  
+        </div>
+	</footer>
+</body>
+</html>
